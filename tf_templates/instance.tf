@@ -228,6 +228,6 @@ resource "null_resource" "trigger_ansible" {
     always_run = "${timestamp()}"
   }
   provisioner "local-exec" {
-    command = "ansible-playbook ansible/playbook.yml -i inventory"
+    command = "ansible-playbook ansible/nginx_install.yml -i inventory"
   }
 }
