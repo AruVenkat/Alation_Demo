@@ -24,6 +24,15 @@ there is a playbook(nginx_install.yml) in ansible folder which is used to instal
 
 I have kept 2 templating file to handle dynamic configurations.
 
+# Steps to execute
+
+1. Enter into the template directory
+***$ cd Alation_Demo/tf_templates/***
+2. enable execute permision for start.sh
+***$ chmod +s start.sh***
+2. run the script 
+***$ ./start.sh***
+
 ***Pros***
 1. Dynamic inventory
 2. Dynamic ssh configuration file which will help to ansible navigate the private subnet instance using bastion host.
