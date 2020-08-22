@@ -30,8 +30,9 @@ I have kept 2 templating file to handle dynamic configurations.
 ***$ cd Alation_Demo/tf_templates/***
 2. enable execute permision for start.sh
 ***$ chmod +s start.sh***
-2. run the script 
+3. run the script 
 ***$ ./start.sh***
+4. there will be few prompt to answer. while creating public/private key enter with empty passphrase, while ansible playbook execution give yes for handshake.
 
 ***Pros***
 1. Dynamic inventory
