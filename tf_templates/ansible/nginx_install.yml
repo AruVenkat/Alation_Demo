@@ -1,0 +1,21 @@
+- hosts: all
+  become: true
+  tasks:
+    - name: "ensure nginx is at the latest version"
+      apt: 
+        name: nginx
+        state: latest
+      become: yes
+
+    - name: "Copy Index file"
+      template: 
+        src: index.html
+        dest: /var/www/html/index.html
+
+    - name: "Start nginx service"
+      service:
+        name: nginx
+        state: started
+      become: yes
+
+    
