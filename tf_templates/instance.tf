@@ -195,12 +195,6 @@ resource "aws_instance" "web_servers" {
   tags = {
     Name = "WebServers-${count.index}"
   }
-  provisioner "remote-exec" {
-    inline = [
-      "sudo apt-get update",
-      "sudo apit-get python"
-    ]
-  }
 }
 
 resource "local_file" "inven" {
